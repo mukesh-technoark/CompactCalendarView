@@ -808,7 +808,7 @@ class CompactCalendarController {
                             yPosition += indicatorOffset;
                         }
 
-                        if (eventsList.size() >= 4) {
+                        if (eventsList.size() > 3) {
                             drawEventsWithPlus(canvas, xPosition, yPosition, eventsList);
                         } else if (eventsList.size() == 3) {
                             drawThreeEvents(canvas, xPosition, yPosition, eventsList);
