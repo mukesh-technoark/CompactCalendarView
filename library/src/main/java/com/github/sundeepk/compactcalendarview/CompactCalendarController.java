@@ -852,7 +852,7 @@ class CompactCalendarController {
         for (int j = 0, k = -2; j < 3; j++, k += 2) {
             Event event = eventsList.get(j);
             float xStartPosition = xPosition + (xIndicatorOffset * k);
-            if (j == 2) {
+            if (j == 3) {
                 dayPaint.setColor(multiEventIndicatorColor);
                 dayPaint.setStrokeWidth(multiDayIndicatorStrokeWidth);
                 canvas.drawLine(xStartPosition - smallIndicatorRadius, yPosition, xStartPosition + smallIndicatorRadius, yPosition, dayPaint);
